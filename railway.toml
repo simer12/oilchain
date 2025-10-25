@@ -1,0 +1,11 @@
+[build]
+builder = "dockerfile"
+dockerfilePath = "Dockerfile"
+
+[deploy]
+numReplicas = 1
+startCommand = "node server/server.js"
+
+[env]
+NODE_ENV = "production"
+PORT = "8000"
