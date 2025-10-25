@@ -1,0 +1,24 @@
+{
+  "name": "oilchain-platform",
+  "version": "1.0.0",
+  "description": "AI-powered oilseed value chain platform for India's self-reliance",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "concurrently \"cd server && npm run dev\" \"cd client && npm start\"",
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install",
+    "build": "cd client && npm run build"
+  },
+  "keywords": [
+    "oilseed",
+    "agriculture",
+    "AI",
+    "blockchain",
+    "India"
+  ],
+  "author": "simer12",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
